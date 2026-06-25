@@ -10,7 +10,7 @@ public class SelectWhere {
         String usuario = "root";
         String senha = null;
 
-        String sql = "SELECT * FROM pintinhopreto WHERE nome = ? AND codigo = ?";
+        String sql = "SELECT * FROM passageiro WHERE nome = ? AND codigo = ?";
 
         try (Connection conn = DriverManager.getConnection(url, usuario, senha);
              PreparedStatement stmt = conn.prepareStatement(sql)) {
